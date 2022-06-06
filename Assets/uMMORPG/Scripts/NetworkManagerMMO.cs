@@ -134,6 +134,8 @@ public partial class NetworkManagerMMO : NetworkManager
 
     void Update()
     {
+        Debug.Log(Player.onlinePlayers.Count);
+
         // any valid local player? then set state to world
         if (NetworkClient.localPlayer != null)
             state = NetworkState.World;
@@ -304,7 +306,6 @@ public partial class NetworkManagerMMO : NetworkManager
     {
         charactersAvailableMsg = message;
         Debug.Log("characters available:" + charactersAvailableMsg.characters.Length);
-
         // set state
         state = NetworkState.Lobby;
 
@@ -598,7 +599,6 @@ public partial class NetworkManagerMMO : NetworkManager
     public override void OnClientDisconnect()
     {
         Debug.Log("OnClientDisconnect");
-
         // take the camera out of the local player so it doesn't get destroyed
         // -> this is necessary for character controller movement where a camera
         //    gets parented to a player.

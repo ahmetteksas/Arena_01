@@ -79,7 +79,7 @@ Animator:
   m_GameObject: {fileID: 110258}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 55eaa0f26a703004f9db20d4e50aae18, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6a9656f614bb04aedb1d40c053bc2dca, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9cbfdf479ee254bd89917e39b88d3995, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -858,47 +858,7 @@ MonoBehaviour:
   animator: {fileID: 9557554}
   inventory: {fileID: 6069428826967279425}
   avatarCamera: {fileID: 20985865562952620}
-  slotInfo:
-  - requiredCategory: WeaponSword
-    location: {fileID: 3260684721294232768}
-    defaultItem:
-      item: {fileID: 11400000, guid: ebde5c85fd92e499493a5ae898bef3cb, type: 2}
-      amount: 1
-  - requiredCategory: Head
-    location: {fileID: 6359539802073659614}
-    defaultItem:
-      item: {fileID: 11400000, guid: df9480ec2425a7a499afe43d7382c90f, type: 2}
-      amount: 1
-  - requiredCategory: Chest
-    location: {fileID: 5090905495289615881}
-    defaultItem:
-      item: {fileID: 0}
-      amount: 0
-  - requiredCategory: Legs
-    location: {fileID: 5110146273399208608}
-    defaultItem:
-      item: {fileID: 11400000, guid: f333f84f9d70f374f972bff071125e84, type: 2}
-      amount: 1
-  - requiredCategory: Shield
-    location: {fileID: 3620846816411877730}
-    defaultItem:
-      item: {fileID: 11400000, guid: 8383cafc85a494a16b426cb11e5efa49, type: 2}
-      amount: 1
-  - requiredCategory: Shoulders
-    location: {fileID: 2008925516675637431}
-    defaultItem:
-      item: {fileID: 11400000, guid: 2e5dac48a0614284792833aa10285daa, type: 2}
-      amount: 1
-  - requiredCategory: Hands
-    location: {fileID: 4529036699774671513}
-    defaultItem:
-      item: {fileID: 11400000, guid: 4b60f1ea0e0ec9649a2be355fc45e912, type: 2}
-      amount: 1
-  - requiredCategory: Feet
-    location: {fileID: 5058964076666356890}
-    defaultItem:
-      item: {fileID: 11400000, guid: 309effbfef0501442aab32ff2a3f9a72, type: 2}
-      amount: 1
+  slotInfo: []
 --- !u!114 &8572613298790361383
 MonoBehaviour:
   m_ObjectHideFlags: 0
