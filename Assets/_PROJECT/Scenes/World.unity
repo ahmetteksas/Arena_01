@@ -64421,5 +64421,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: arenaprototype
       objectReference: {fileID: 0}
+    - target: {fileID: 7043854063198650815, guid: bb2d4b710efbcf94da52a934e0efd8b3,
+        type: 3}
+      propertyPath: networkManager
+      value: 
+      objectReference: {fileID: 2072336950}
+    - target: {fileID: 7352423630606783272, guid: bb2d4b710efbcf94da52a934e0efd8b3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352423630606783272, guid: bb2d4b710efbcf94da52a934e0efd8b3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb2d4b710efbcf94da52a934e0efd8b3, type: 3}

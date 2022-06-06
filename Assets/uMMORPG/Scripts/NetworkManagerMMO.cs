@@ -134,7 +134,7 @@ public partial class NetworkManagerMMO : NetworkManager
 
     void Update()
     {
-        Debug.Log(Player.onlinePlayers.Count);
+        //Debug.Log(Player.onlinePlayers.Count);
 
         // any valid local player? then set state to world
         if (NetworkClient.localPlayer != null)
