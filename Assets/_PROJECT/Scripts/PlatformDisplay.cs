@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using DG.Tweening;
 
 public class PlatformDisplay : NetworkBehaviour
 {
     [SerializeField] NetworkManager networkManager;
 
-    [HideInInspector] public List<Player> playerClasses = new List<Player>(); 
+    [HideInInspector] public List<Player> playerClasses = new List<Player>();
+
+    //[SyncVar] 
+    [SerializeField] Transform finalPos;
+
+    private bool moveUp;
 
     public override void OnStartClient()
     {
@@ -29,5 +35,19 @@ public class PlatformDisplay : NetworkBehaviour
     void Update()
     {
         Debug.Log(Player.onlinePlayers.Count);
+        if (Player.onlinePlayers.Count == 2)
+        {
+            if (!moveUp)
+            {
+                StartCoroutine(GoUp());
+                moveUp = true;
+            }
+        }
+    }
+
+    IEnumerator GoUp()
+    {
+        yield return new WaitForFixedUpdate();
+        transform.DOMove(finalPos.position, 2f);
     }
 }
