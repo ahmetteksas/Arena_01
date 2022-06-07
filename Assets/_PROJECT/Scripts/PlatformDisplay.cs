@@ -35,7 +35,7 @@ public class PlatformDisplay : NetworkBehaviour
     void Update()
     {
         Debug.Log(Player.onlinePlayers.Count);
-        if (Player.onlinePlayers.Count == 2)
+        if (Player.onlinePlayers.Count == 3)
         {
             if (!moveUp)
             {

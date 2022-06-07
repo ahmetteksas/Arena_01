@@ -605,7 +605,7 @@ MonoBehaviour:
   lastCombatTime: 0
   target: {fileID: 0}
   _speed:
-    baseValue: 5
+    baseValue: 7
     bonusPerLevel: 0
   _gold: 0
   stunnedOverlay: {fileID: 1681006416739371976}
@@ -733,7 +733,7 @@ MonoBehaviour:
   controllerCollider: {fileID: 1149956349600956693}
   state: 0
   moveDir: {x: 0, y: 0, z: 0}
-  rotationSpeed: 190
+  rotationSpeed: 250
   runStepLength: 0.7
   runStepInterval: 3
   runCycleLegOffset: 0.2
@@ -744,7 +744,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   underwaterThreshold: 0.7
-  jumpSpeed: 8
+  jumpSpeed: 10
   jumpLeg: 0
   airborneSteering: 1
   fallMinimumMagnitude: 6
@@ -797,11 +797,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  XSensitivity: 2
-  YSensitivity: 2
+  XSensitivity: 4
+  YSensitivity: 4
   MinimumX: -70
   MaximumX: 70
-  freeLookDragThreshold: 40
+  freeLookDragThreshold: 10
   mouseFreeLookButton: 1
   mouseRotateButton: 0
   mouseRotationLocksCursor: 0
