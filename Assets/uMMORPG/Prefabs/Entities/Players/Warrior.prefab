@@ -803,8 +803,8 @@ MonoBehaviour:
   MaximumX: 70
   freeLookDragThreshold: 10
   mouseFreeLookButton: 1
-  mouseRotateButton: 0
-  mouseRotationLocksCursor: 0
+  mouseRotateButton: 1
+  mouseRotationLocksCursor: 1
   firstPersonParent: {fileID: 3269135161027780824}
   freeLookParent: {fileID: 8317910231159203905}
   viewBlockingLayers:

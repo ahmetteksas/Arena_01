@@ -43685,7 +43685,7 @@ GameObject:
   - component: {fileID: 1488334801}
   - component: {fileID: 1488334806}
   - component: {fileID: 1488334804}
-  - component: {fileID: 1488334802}
+  - component: {fileID: 2072336951}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -43706,35 +43706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iterations: 5000
---- !u!114 &1488334802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488334800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Port: 7777
-  DualMode: 1
-  NoDelay: 1
-  Interval: 10
-  Timeout: 10000
-  FastResend: 2
-  CongestionWindow: 0
-  SendWindowSize: 4096
-  ReceiveWindowSize: 4096
-  MaxRetransmit: 40
-  NonAlloc: 1
-  MaximizeSendReceiveBuffersToOSLimit: 1
-  ReliableMaxMessageSize: 298449
-  UnreliableMaxMessageSize: 1199
-  debugLog: 0
-  statisticsGUI: 0
-  statisticsLog: 0
 --- !u!4 &1488334803
 Transform:
   m_ObjectHideFlags: 0
@@ -61584,7 +61555,7 @@ MonoBehaviour:
   serverTickRate: 20
   offlineScene: 
   onlineScene: 
-  transport: {fileID: 1488334802}
+  transport: {fileID: 2072336951}
   networkAddress: Use the Server List below!
   maxConnections: 1000
   authenticator: {fileID: 1488334806}
@@ -61605,8 +61576,8 @@ MonoBehaviour:
   state: 0
   uiPopup: {fileID: 1165640891}
   serverList:
-  - name: Local
-    ip: 127.0.0.1
+  - name: Serveral
+    ip: us-east.cloud.playflow.app
   combatLogoutDelay: 5
   selection: -1
   selectionLocations:
@@ -61655,6 +61626,33 @@ MonoBehaviour:
   onServerDisconnect:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2072336951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488334800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0110f245bfcfc7d459681f7bd9ebc590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 12662
+  maxMessageSize: 16384
+  handshakeMaxSize: 3000
+  noDelay: 1
+  sendTimeout: 5000
+  receiveTimeout: 20000
+  serverMaxMessagesPerTick: 10000
+  clientMaxMessagesPerTick: 1000
+  batchSend: 1
+  waitBeforeSend: 0
+  clientUseWss: 0
+  sslEnabled: 0
+  sslCertJson: ./cert.json
+  sslProtocols: 3072
+  _logLevels: 0
 --- !u!1 &2073488883
 GameObject:
   m_ObjectHideFlags: 0
