@@ -802,7 +802,7 @@ MonoBehaviour:
   MinimumX: -70
   MaximumX: 70
   freeLookDragThreshold: 10
-  mouseFreeLookButton: 1
+  mouseFreeLookButton: 0
   mouseRotateButton: 1
   mouseRotationLocksCursor: 1
   firstPersonParent: {fileID: 3269135161027780824}

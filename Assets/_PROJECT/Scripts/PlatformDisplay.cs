@@ -7,6 +7,7 @@ using DG.Tweening;
 public class PlatformDisplay : NetworkBehaviour
 {
     [SerializeField] NetworkManager networkManager;
+    [SerializeField] Transform sphere;
 
     [HideInInspector] public List<Player> playerClasses = new List<Player>();
 
@@ -54,7 +55,10 @@ public class PlatformDisplay : NetworkBehaviour
 
     IEnumerator GoUp()
     {
+        transform.DOScale(new Vector3(.6f, .6f, .6f), .1f);
         yield return new WaitForFixedUpdate();
-        transform.DOMove(finalPos.position, 2f);
+        yield return transform.DOMove(finalPos.position, 2f).WaitForCompletion();
+        sphere.SetParent(null, true);
+        //transform.DOPause();
     }
 }

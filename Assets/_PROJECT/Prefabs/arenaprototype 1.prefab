@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166727689529154354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.008280563, y: -2.8792486, z: 0}
+  m_LocalPosition: {x: -0.008280563, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1172,7 +1172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5587853662295954142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.47, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1301,7 +1301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5804130013887588920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.47, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1417,7 +1417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6970103703285900756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.008280563, y: -2.8792486, z: 0}
+  m_LocalPosition: {x: -0.008280563, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1487,6 +1487,8 @@ GameObject:
   - component: {fileID: 2573374252354555258}
   - component: {fileID: 7159050446566519026}
   - component: {fileID: 8981713490627245862}
+  - component: {fileID: 301606378}
+  - component: {fileID: 301606377}
   m_Layer: 0
   m_Name: pCylinder1 (1)
   m_TagString: Untagged
@@ -1503,7 +1505,7 @@ Transform:
   m_GameObject: {fileID: 7518518294721426733}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.01, y: -0.25, z: -9.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4371756383889496944}
@@ -1595,6 +1597,36 @@ MonoBehaviour:
   networkManager: {fileID: 0}
   playerClasses: []
   finalPos: {fileID: 4499078547526902389}
+--- !u!54 &301606378
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7518518294721426733}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 6
+  m_CollisionDetection: 0
+--- !u!64 &301606377
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7518518294721426733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5076798556035486163, guid: d81cd674dd8f63342a1364e1ebf90461, type: 3}
 --- !u!1 &8288553584994889402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1640,8 @@ GameObject:
   - component: {fileID: 8506417708416085468}
   - component: {fileID: 4881484090263662101}
   - component: {fileID: 7043854063198650815}
+  - component: {fileID: 39460333}
+  - component: {fileID: 39460332}
   m_Layer: 0
   m_Name: pCylinder1
   m_TagString: Untagged
@@ -1624,7 +1658,7 @@ Transform:
   m_GameObject: {fileID: 8288553584994889402}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0000011444091, y: -0.25, z: 0.0000011444091}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8774179060180592711}
@@ -1716,6 +1750,36 @@ MonoBehaviour:
   networkManager: {fileID: 0}
   playerClasses: []
   finalPos: {fileID: 8068252690474019875}
+--- !u!64 &39460333
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8288553584994889402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5076798556035486163, guid: d81cd674dd8f63342a1364e1ebf90461, type: 3}
+--- !u!54 &39460332
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8288553584994889402}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 6
+  m_CollisionDetection: 0
 --- !u!1 &8359914007117460147
 GameObject:
   m_ObjectHideFlags: 0
