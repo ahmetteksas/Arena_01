@@ -35,12 +35,19 @@ public class PlatformDisplay : NetworkBehaviour
     void Update()
     {
         Debug.Log(Player.onlinePlayers.Count);
-        if (Player.onlinePlayers.Count == 2)
+        if (Player.onlinePlayers.Count == 1)
         {
             if (!moveUp)
             {
                 StartCoroutine(GoUp());
                 moveUp = true;
+            }
+        }
+        foreach (var item in FindObjectsOfType<Health>())
+        {
+            if (item == FindObjectOfType<Health>().health)
+            {
+                Debug.Log(item.current);
             }
         }
     }
