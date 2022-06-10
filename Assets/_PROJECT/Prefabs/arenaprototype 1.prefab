@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4371756383889496944}
   - component: {fileID: 6524567567464140042}
   - component: {fileID: 3115888960956485260}
-  m_Layer: 0
+  - component: {fileID: 2112740694}
+  - component: {fileID: 1318693334095298593}
+  m_Layer: 6
   m_Name: pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166727689529154354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.008280563, y: -2.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.124710895, y: -1.8782507, z: 0.10909079}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3300249736814746042}
@@ -83,6 +85,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &2112740694
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166727689529154354}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &1318693334095298593
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166727689529154354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.9621346
+  m_Center: {x: 0.00000333786, y: 0.00000023841858, z: 0.0000019073486}
 --- !u!1 &1403430737702422913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8068252690474019875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FinalPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,7 +1317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4499078547526902389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FinalPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1433,9 @@ GameObject:
   - component: {fileID: 8774179060180592711}
   - component: {fileID: 3557782922941609547}
   - component: {fileID: 4262107878905266857}
-  m_Layer: 0
+  - component: {fileID: 1882215936}
+  - component: {fileID: 3280187903599267907}
+  m_Layer: 6
   m_Name: pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1417,8 +1450,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6970103703285900756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.008280563, y: -2.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.09605237, y: -1.8782508, z: 0.13613158}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5713680170714931376}
@@ -1474,6 +1507,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &1882215936
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970103703285900756}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &3280187903599267907
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6970103703285900756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.9621346
+  m_Center: {x: 0.0000012721866, y: 0.00000023841858, z: 0}
 --- !u!1 &7518518294721426733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1551,7 @@ GameObject:
   - component: {fileID: 8981713490627245862}
   - component: {fileID: 301606378}
   - component: {fileID: 301606377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCylinder1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1595,6 +1657,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   networkManager: {fileID: 0}
+  sphere: {fileID: 4371756383889496944}
   playerClasses: []
   finalPos: {fileID: 4499078547526902389}
 --- !u!54 &301606378
@@ -1608,11 +1671,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 6
-  m_CollisionDetection: 0
+  m_Constraints: 122
+  m_CollisionDetection: 2
 --- !u!64 &301606377
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1624,8 +1687,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
+  m_Convex: 1
+  m_CookingOptions: -1
   m_Mesh: {fileID: -5076798556035486163, guid: d81cd674dd8f63342a1364e1ebf90461, type: 3}
 --- !u!1 &8288553584994889402
 GameObject:
@@ -1642,7 +1705,7 @@ GameObject:
   - component: {fileID: 7043854063198650815}
   - component: {fileID: 39460333}
   - component: {fileID: 39460332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1748,6 +1811,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   networkManager: {fileID: 0}
+  sphere: {fileID: 8774179060180592711}
   playerClasses: []
   finalPos: {fileID: 8068252690474019875}
 --- !u!64 &39460333
@@ -1761,8 +1825,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
+  m_Convex: 1
+  m_CookingOptions: -1
   m_Mesh: {fileID: -5076798556035486163, guid: d81cd674dd8f63342a1364e1ebf90461, type: 3}
 --- !u!54 &39460332
 Rigidbody:
@@ -1775,11 +1839,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 6
-  m_CollisionDetection: 0
+  m_Constraints: 122
+  m_CollisionDetection: 2
 --- !u!1 &8359914007117460147
 GameObject:
   m_ObjectHideFlags: 0

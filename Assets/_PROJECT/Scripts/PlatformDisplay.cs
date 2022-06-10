@@ -33,6 +33,14 @@ public class PlatformDisplay : NetworkBehaviour
         return classes;
     }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(Adjusting());
+        }
+    }
+
     void Update()
     {
         Debug.Log(Player.onlinePlayers.Count);
@@ -53,12 +61,22 @@ public class PlatformDisplay : NetworkBehaviour
         }
     }
 
+    IEnumerator Adjusting()
+    {
+        GetComponent<Rigidbody>().isKinematic = true;
+        yield return new WaitForSeconds(1f);
+        transform.rotation = Quaternion.identity;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        GetComponent<Rigidbody>().isKinematic = false;
+    }
+
     IEnumerator GoUp()
     {
-        transform.DOScale(new Vector3(.6f, .6f, .6f), .1f);
+        transform.DOScale(new Vector3(.8f, .8f, .8f), .1f);
         yield return new WaitForFixedUpdate();
         yield return transform.DOMove(finalPos.position, 2f).WaitForCompletion();
-        sphere.SetParent(null, true);
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+        //sphere.SetParent(null, true);
         //transform.DOPause();
     }
 }
